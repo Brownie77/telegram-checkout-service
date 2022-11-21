@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.productsSection {
+  max-width: 1050px;
+  padding: 0 30px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #ececec;
+  border-radius: 4px;
+}
+
+.cardImage {
+  padding: 15px;
+  width: 90%;
+}
+
+.productInfoWrapper {
+  margin: 20px;
+}
+
+.productTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.41;
+}
+
+.productDescrition {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
+.productPaymentArea {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.productCheckoutButton {
+  display: block;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  padding: 12px;
+  border: solid 2px #444444;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 40px;
+  background: #f7f7f7;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

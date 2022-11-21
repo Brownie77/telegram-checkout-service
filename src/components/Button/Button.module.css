@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  padding: 12px;
+  border: solid 2px #444444;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 40px;
+  background: #f7f7f7;
+  min-width: 103px;
+  width: max-content;
+}

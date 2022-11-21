@@ -1,0 +1,15 @@
+.input {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  outline: none;
+  border: 1px solid #ececec;
+  padding: 12px;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+}
+
+.input::placeholder {
+  color: #8b8585;
+}
