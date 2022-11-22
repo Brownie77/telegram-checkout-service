@@ -47,11 +47,26 @@ p {
   align-items: center;
 }
 
-.productPrice {
+.productNewPrice {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.6;
+}
+
+.productOldPrice {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+  text-decoration: line-through;
+  color: #f44236;
+}
+
+.productPriceWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .productCheckoutButton {

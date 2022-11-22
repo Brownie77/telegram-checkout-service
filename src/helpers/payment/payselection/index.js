@@ -28,22 +28,45 @@ const pay = function (id, amount, description) {
       // для onSuccess -> PAY_WIDGET:TRANSACTION_SUCCESS
       // для onError -> PAY_WIDGET:TRANSACTION_FAIL, PAY_WIDGET:CREATE_NETWORK_ERROR, PAY_WIDG:CREATE_BAD_REQUEST_ERROR
       onSuccess: function (res) {
-        console.log('onSuccess from shop', res);
         switch (id) {
           case 1:
             // eslint-disable-next-line no-undef
-            PuzzleBot.sendCommand('Первый товар');
+            PuzzleBot.sendCommand('Товар 1');
             break;
           case 2:
             // eslint-disable-next-line no-undef
-            PuzzleBot.sendCommand('Второй товар');
+            PuzzleBot.sendCommand('Товар 2');
+            break;
+          case 3:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 3');
+            break;
+          case 4:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 4');
+            break;
+          case 5:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 5');
+            break;
+          case 6:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 6');
+            break;
+          case 7:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 7');
+            break;
+          case 8:
+            // eslint-disable-next-line no-undef
+            PuzzleBot.sendCommand('Товар 8');
             break;
           default:
             console.log(`Sorry, we are out of ${id}.`);
         }
       },
       onError: function (res) {
-        console.log('onFail from shop', res, id);
+        console.log('onFail from shop', res);
       },
       onClose: function (res) {
         console.log('onClose from shop', res);

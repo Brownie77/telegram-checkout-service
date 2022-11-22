@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Card.module.css';
 import pay from '../../helpers/payment/payselection';
-function Card({ id, price, title, description, image }) {
+function Card({ id, price, title, oldPrice, image }) {
   return (
     <div className={styles.productsSection}>
       <div className={styles.cardWrapper}>
@@ -16,7 +16,10 @@ function Card({ id, price, title, description, image }) {
           <h3 className={styles.productTitle}>{title}</h3>
         </div>
         <div className={styles.productPaymentArea}>
-          <p className={styles.productPrice}>{price} руб.</p>
+          <div className={styles.productPriceWrapper}>
+            <p className={styles.productOldPrice}>{oldPrice}₽</p>
+            <p className={styles.productNewPrice}>{price} руб.</p>
+          </div>
           <button
             onClick={() => {
               pay(id, price, title);
